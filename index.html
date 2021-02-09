@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title>CALCULADORA</title>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="calculadora">
+                <div class="display" id="display"></div>
+                <div class="teclas">
+                    <button type="button" onclick="capturarEntrada(7)">7</button>
+                    <button type="button"  onclick="capturarEntrada(8)">8</button>
+                    <button type="button"  onclick="capturarEntrada(9)">9</button>
+                    <button type="button"  onclick="capturarEntrada('*')">*</button>
+                    <button type="button"  onclick="capturarEntrada(4)">4</button>
+                    <button type="button"  onclick="capturarEntrada(5)">5</button>
+                    <button type="button"  onclick="capturarEntrada(6)">6</button>
+                    <button type="button"  onclick="capturarEntrada('-')">-</button>
+                    <button type="button"  onclick="capturarEntrada(1)">1</button>
+                    <button type="button"  onclick="capturarEntrada(2)">2</button>
+                    <button type="button"  onclick="capturarEntrada(3)">3</button>
+                    <button type="button"  onclick="capturarEntrada('+')">+</button>
+                    <button id="clear" type="button" onclick="capturarEntrada('limpar')">C</button>
+                    <button type="button"  onclick="capturarEntrada(0)">0</button>
+                    <button type="button" onclick="capturarEntrada('=')">=</button>
+                    <button type="button"  onclick="capturarEntrada('/')">/</button>
+                </div> 
+            </div>
+            <div class="historico">
+                <h5>Histórico</h5>
+                <ul id="hist">
+
+                </ul>
+                <button type="button" onclick="limparHistorico()">Limpar Histórico</button>
+            </div>
+            
+        </div>        
+        
+        <script src="assets//calculadora.js"></script>
+        <script src="assets/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    </body>
+
+
+</html>
